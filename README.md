@@ -1,2 +1,3 @@
 # ia-nav-mock
-information architecture mockup
+
+information architecture mockup of navigations
