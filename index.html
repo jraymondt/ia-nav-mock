@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplar Navbar mock-up - IA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>The Exemplar</h1>
+            <p>Navigation mock-up for IA.</p>
+        </div>
+    </header> 
+    <nav class="navbar">
+        <div class="logo"><a href="#" data-section="homeContent" class="nav-link active">The Exemplar</a></div>
+        <ul class="nav-links">
+            <li><a href="#" data-section="diningContent" class="nav-link">Dining</a></li>
+            <li><a href="#" data-section="facilitiesContent" class="nav-link">Facilities</a></li>
+            <li><a href="#" data-section="spaContent" class="nav-link">Spa & Beauty</a></li>
+            <li><a href="#" data-section="bookingContent" class="nav-link">Book Hotel</a></li>
+            <li><a href="#" data-section="enquiryContent" class="nav-link">Login</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Open menu">
+            &#9776;
+        </button>
+    </nav>
+    <div class="overlay" id="menuOverlay"></div>   
+    
+    <main id="mainContent">
+        <!-- links in the nav are connected to these sections to test switching-->
+        <section id="homeContent" class="content-section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Welcome to Our The Exemplar</h1>
+                    <p>Experience unparalleled comfort and luxury at our premier hotel. From elegant rooms to world-class amenities, we provide everything you need for a perfect stay.</p>
+                    <button class="btn btn--primary btn--lg">Book Your Stay</button>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Elegant Rooms</h3>
+                    <p>Luxuriously appointed accommodations with modern amenities</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fine Dining</h3>
+                    <p>Award-winning restaurants serving international cuisine</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Spa & Wellness</h3>
+                    <p>Rejuvenating treatments and wellness programs</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="diningContent" class="content-section">
+            <div class="section-header">
+                <h1>Dining Experiences</h1>
+                <p>Indulge in our award-winning restaurants featuring international cuisine, local specialties, and innovative dishes crafted by our expert chefs.</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Fine Dining Restaurant</h3>
+                    <p>Experience culinary excellence with our signature tasting menu and wine pairings.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Casual Dining</h3>
+                    <p>Relaxed atmosphere with comfort food favorites and international dishes.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Room Service</h3>
+                    <p>24/7 in-room dining service with our full menu available to your door.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Bar & Lounge</h3>
+                    <p>Signature cocktails, premium spirits, and light bites in an elegant setting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilitiesContent" class="content-section">
+            <div class="section-header">
+                <h1>Hotel Facilities</h1>
+                <p>Enjoy our comprehensive facilities including fitness center, swimming pool, business center, and conference rooms designed for both leisure and business travelers.</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Swimming Pool</h3>
+                    <p>Olympic-size pool with poolside service and comfortable lounge areas.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art equipment, personal training, and group fitness classes.</p>
+                </div>
+                <div class="content-card" >
+                    <h3>Business Center</h3>
+                    <p>Meeting rooms, printing services, and high-speed internet access.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Conference Rooms</h3>
+                    <p>Professional event spaces with AV equipment and catering services.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="spaContent" class="content-section">
+            <div class="section-header">
+                <h1>Spa & Beauty</h1>
+                <p>Relax and rejuvenate at our full-service spa offering therapeutic treatments, beauty services, and wellness programs in a tranquil environment.</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Massage Therapy</h3>
+                    <p>Therapeutic and relaxation massages by certified therapists.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Facial Treatments</h3>
+                    <p>Rejuvenating skincare treatments using premium products.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Beauty Salon</h3>
+                    <p>Full-service salon for hair styling, manicures, and pedicures.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Wellness Center</h3>
+                    <p>Yoga classes, meditation sessions, and wellness consultations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bookingContent" class="content-section">
+            <div class="section-header">
+                <h1>Book Your Stay</h1>
+                <p>There is a place for you here.</p>
+            </div>
+            <div class="booking-form card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Check-in Date</label>
+                        <input type="date" class="form-control" title="Select check-in date" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Check-out Date</label>
+                        <input type="date" class="form-control" title="Select check-out date" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="guestsSelect">Guests</label>
+                        <select class="form-control" id="guestsSelect">
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="roomTypeSelect">Room Type</label>
+                        <select class="form-control" id="roomTypeSelect">
+                            <option>Standard Room</option>
+                            <option>Deluxe Room</option>
+                            <option>Janitor Suite</option>
+                            <option>Executive Suit</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--full-width">Check Availability</button>
+            </div>
+        </section>
+
+        <section id="enquiryContent" class="content-section">
+            <div class="section-header">
+                <h1>Login</h1>
+                <p>Or suffer for entering</p>
+            </div>
+            <div class="enquiry-container">
+                <div class="login-form card">
+                    <h3>Deposit your soul</h3>
+                    <div class="form-group">
+                        <label class="form-label">Login</label>
+                        <input type="text" class="form-control" title="Login" placeholder="Your Login">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" title="Enter your email address" placeholder="Your Email">
+                    </div>
+                                    
+                    <button class="btn btn--primary">Register</button>
+                </div>
+                <div class="login-form card">
+                    <h3>Retrieve your soul</h3>
+                    <div class="form-group">
+                        <label class="form-label">Login</label>
+                        <input type="text" class="form-control" title="Login" placeholder="Your Login">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" title="Enter your email address" placeholder="Your Email">
+                    </div>
+                    <button class="btn btn--primary">Send Help</button>
+                </div>       
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>The Exemplar</h4>
+                <p>Experience unparalleled misery and disapointment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>The Exemplar<br>Hotel <br>+61 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Exemplar. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
