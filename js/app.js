@@ -77,3 +77,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// Optional: Add functionality to toggle between hamburger and sidebar navigation
+// Navigation Style Toggle
+const navToggle = document.getElementById('navToggle');
+const body = document.body;
+let isSidebarMode = false;
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        isSidebarMode = !isSidebarMode;
+
+        if (isSidebarMode) {
+            body.classList.add('sidebar-nav');
+            navToggle.innerHTML = '<span class="toggle-icon">←</span> Switch to Top Nav';
+
+            // Update hamburger behavior for mobile sidebar
+            if (window.innerWidth <= 768) {
+                const navbar = document.querySelector('.navbar');
+                hamburger.addEventListener('click', () => {
+                    navbar.classList.toggle('mobile-open');
+                });
+            }
+        } else {
+            body.classList.remove('sidebar-nav');
+            navToggle.innerHTML = '<span class="toggle-icon">☰</span> Switch to Sidebar';
+
+            // Reset mobile navbar state
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.remove('mobile-open');
+        }
+    });
+}
+
+// Handle window resize to manage mobile sidebar behavior
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && isSidebarMode) {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.remove('mobile-open');
+    }
+});
